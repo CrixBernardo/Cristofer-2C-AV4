@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Aprovação de Estudante</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        input {
-            margin: 10px;
-            padding:
+    <title>Verificação de Aprovação de Estudante</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Verificação de Aprovação de Estudante</h1>
+    <p>Insira as três notas trimestrais:</p>
+
+    <!-- Campos de entrada para as notas -->
+    <input type="number" id="nota1" placeholder="Nota 1" min="0" max="10" step="0.1">
+    <input type="number" id="nota2" placeholder="Nota 2" min="0" max="10" step="0.1">
+    <input type="number" id="nota3" placeholder="Nota 3" min="0" max="10" step="0.1">
+
+    <br>
+    <!-- Botão para verificar a aprovação -->
+    <button onclick="verificarAprovacao()">Verificar Aprovação</button>
+
+    <!-- Área para exibir o resultado -->
+    <div class="resultado" id="resultado"></div>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
